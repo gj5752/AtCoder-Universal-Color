@@ -1,0 +1,25 @@
+{
+	"name": "AtCoder Universal Color",
+	"description": "AtCoder、AtCoder Problems の水色、緑色、茶色の色彩を変更し、見やすくします。",
+	"version": "1.0",
+	"manifest_version": 3,
+	"author": "gj5752",
+	"icons": {
+		"16": "icon/16.png",
+		"48": "icon/48.png",
+		"128": "icon/128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://atcoder.jp/*"],
+			"css": ["style.css"]
+		},
+		{
+			"matches": ["https://kenkoooo.com/atcoder/*"],
+			"css": ["style.css"],
+			"js": ["script.js"],
+			"run_at": "document_end",
+			"all_frames": true
+		}
+	]
+}

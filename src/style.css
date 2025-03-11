@@ -1,0 +1,27 @@
+/* 水 緑 茶 を置き換え */
+
+/* AtCoder */
+.user-green {
+	color: #78c496 !important;
+}
+
+.user-cyan {
+	color: #68c8f2 !important;
+}
+
+.user-brown {
+	color: #8a3b2c !important;
+}
+
+/* AtCoder Problems */
+.difficulty-green {
+	color: #78c496 !important;
+}
+
+.difficulty-cyan {
+	color: #68c8f2 !important;
+}
+
+.difficulty-brown {
+	color: #8a3b2c !important;
+}
