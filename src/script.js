@@ -5,9 +5,9 @@ window.addEventListener("load", main, false);
 
 function main(e) {
 	// table-problem の要素が取得できるまで待機
-	const jsInitCheckTimer = setInterval(jsLoaded, 250);
+	const jsInitCheckTimer = setInterval(jsLoaded, 500);
 	function jsLoaded() {
-		if (document.getElementsByClassName("table-problem") != null) {
+		if (document.getElementsByClassName("table-problem").length > 0) {
 			clearInterval(jsInitCheckTimer);
 
 			var problems = document.getElementsByClassName("table-problem");

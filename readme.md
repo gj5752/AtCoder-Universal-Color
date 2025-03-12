@@ -16,3 +16,21 @@ AtCoder のユーザ名と、パフォーマンスやレーティングの数字
 4. 出てきた「パッケージ化されていない拡張機能を読み込む」ボタンを押し、さっき展開したフォルダの src フォルダを選択します
 5. [AtCoder](https://atcoder.jp/home) または [AtCoder Problems](https://kenkoooo.com/atcoder) にアクセスします
 6. 色が変わっています
+
+## 参考
+
+Qiita に解説記事を載せています。
+
+https://qiita.com/gj_5752/items/ccd7ab668cf3c48685cf
+
+## 更新点
+
+2025/03/11
+
+-   v1.0 リリース
+
+2025/03/12
+
+-   v1.1 リリース
+-   `getElementsByClassName("table-problem")` の待機を `null` から `length > 0` に変更
+-   Readme を加筆
