@@ -34,3 +34,9 @@ https://qiita.com/gj_5752/items/ccd7ab668cf3c48685cf
 -   v1.1 リリース
 -   `getElementsByClassName("table-problem")` の待機を `null` から `length > 0` に変更
 -   Readme を加筆
+
+2025/06/08
+
+-   v1.2 リリース
+-   難易度丸にマウスオーバーしたとき、難易度値のポップアップ表示がされない問題を修正
+    -   難易度丸の色変更を `innerHTML` を使って行っていたのを、属性値の書き換えに変更し、イベントリスナーを保持

@@ -10,8 +10,6 @@ function main(e) {
 		if (document.getElementsByClassName("table-problem").length > 0) {
 			clearInterval(jsInitCheckTimer);
 
-			var problems = document.getElementsByClassName("table-problem");
-
 			let old_green = "rgb(0, 128, 0)";
 			let old_brown = "rgb(128, 64, 0)";
 			let old_cyan = "rgb(0, 192, 192)";
@@ -20,14 +18,17 @@ function main(e) {
 			let new_brown = "rgb(138, 59, 44)";
 			let new_cyan = "rgb(104, 200, 242)";
 
-			// 色の書き換え
-			for (let i = 0; i < problems.length; i++) {
-				var problem = problems[i].innerHTML;
-				problem = problem.replaceAll(old_green, new_green);
-				problem = problem.replaceAll(old_brown, new_brown);
-				problem = problem.replaceAll(old_cyan, new_cyan);
-				document.getElementsByClassName("table-problem")[i].innerHTML = problem;
-			}
+			// 属性の変更で色の変換
+			const circles = document.querySelectorAll(".difficulty-circle");
+			circles.forEach((circle) => {
+				var style = circle.getAttribute("style");
+				if (style) {
+					style = style.replaceAll(old_green, new_green);
+					style = style.replaceAll(old_brown, new_brown);
+					style = style.replaceAll(old_cyan, new_cyan);
+					circle.setAttribute("style", style);
+				}
+			});
 		}
 	}
 }
